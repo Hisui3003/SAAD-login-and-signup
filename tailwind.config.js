@@ -13,8 +13,31 @@ export default {
     "./resources/**/*.{blade.php, vue, js}"
   ],
   theme: {
-    extend: {},
+    screens:{
+        sm: '576px',
+        md: '768px',
+        lg: '992px',
+        xl: '1200px'
+    },
+    container:{
+        center: true,
+        padding: '6rem'
+    },
+    colors:{
+        'primary' : '#FD3D57'
+    },
+    extend: {
+        fontFamily:{
+            montserrat:"'Montserrat', sans-serif",
+            roboto:"'Roboto', sans-serif"
+        }
+    },
   },
-  plugins: [],
+  variants: {
+    extends: {
+        display: ['group-hover']
+    }
+  },
+  plugins: [require('@tailwindcss/forms')],
 }
 

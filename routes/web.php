@@ -24,3 +24,37 @@ Route::get('signup', function () {
 Route::get('ui', function () {
     return view('ui');
 });
+
+// test pages VV
+
+Route::get('page1', function () {
+    return view('page1');
+});
+
+Route::get('index', function () {
+    return view('index');
+});
+
+Route::get('login', function () {
+    return view('login');
+});
+
+Route::get('register', function () {
+    return view('register');
+});
+
+Route::get('listproperty', function () {
+    return view('listproperty');
+});
+
+Route::get('viewing', function () {
+    return view('viewing');
+});
+
+Route::get('rentals', function () {
+    return view('rentals');
+});
+
+Route::get('user', function () {
+    return view('user');
+});
