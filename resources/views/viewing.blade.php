@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Page1</title>
+   <title>FindFlat</title>
 
 
    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -186,15 +186,36 @@
                 <h1 class="text-xl font-light text-primary px-5">FORT BONIFACIO, TAGUIG</h1>
             </div>
 
+            {{-- table/details --}}
+            <table class="border rounded-lg overflow-hidden">
+                <tr class="border-b">
+                  <th class="py-2 px-4 font-semibold text-left">Details</th>
+                  <th class="py-2 px-4 font-semibold text-left">Amenities</th>
+                  <th class="py-2 px-4 font-semibold text-left">Monthly Rate</th>
+                </tr>
+                <tr>
+                  <td class="py-4 px-4 align-top">
+                    McKinley West Village<br>
+                    LA: 188 sq.m.<br>
+                    FA: 515 sq.m.<br>
+                    5 bedrooms<br>
+                    6 T&B<br>
+                    4 car garage<br>
+                    Fully Finished<br>
+                    High ceiling<br>
+                    With terrace and balconies, AC, water heater.
+                  </td>
+                  <td class="py-4 px-4 align-top">
+                    Air Conditioning<br>
+                    Garage<br>
+                    24-hours Security
+                  </td>
+                  <td class="py-4 px-4 align-top">
+                    ₱30,000
+                  </td>
+                </tr>
+            </table>
 
-            {{-- place details --}}
-            <div class="flex items-center pt-5 px-5">
-                <h3 class="boder-b bodr-gray-200 font-roboto text-gray-800 pb-3 font-medium">
-                    Place Details
-                </h3>
-
-
-            </div>
         </div>
         {{-- end of product --}}
 

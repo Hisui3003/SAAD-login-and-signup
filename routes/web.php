@@ -17,20 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('signup', function () {
-    return view('signup');
-});
-
-Route::get('ui', function () {
-    return view('ui');
-});
-
-// test pages VV
-
-Route::get('page1', function () {
-    return view('page1');
-});
-
 Route::get('index', function () {
     return view('index');
 });
