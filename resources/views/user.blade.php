@@ -16,50 +16,51 @@
 
 
 </head>
-<body>
-{{-- ito yung header ng page 1 --}}
-   <header class="py-1 shadow-sm bg-white">
-       <div class="container flex items-center justify-between">
-           {{-- logo --}}
-           <a href="#">
-               <img src="https://www.svgrepo.com/show/272028/houses-home.svg" alt="homelogo" class="w-16">
-               <h1 class="text-gray-700 hover:text-primary transision">FindFlat</h1>
-           </a>
+<body class="bg-gray-200">
+    {{-- ito yung header ng page 1 --}}
+    <header class="py-1 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            {{-- logo --}}
+            <a href="#">
+                <img src="https://www.svgrepo.com/show/272028/houses-home.svg" alt="homelogo" class="w-16">
+                <h1 class="text-gray-700 hover:text-red-500 transision">FindFlat</h1>
+            </a>
 
 
-           {{-- search area --}}
-           <div class="w-full max-w-xl relative flex">
-               <span class="absolute left-4 top-3 text-lg text-gray-400">
-                   <i class="fas fa-search"></i>
-               </span>
-               <input type="text" class="w-full border border-primary border-r-l-0 pl-12 py-3 pr-3 rounded-1-md focus:outline-none" placeholder="Search">
-               <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
-           </div>
+            {{-- search area --}}
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-1-md focus:outline-none" placeholder="Search">
+                <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+            </div>
 
 
-           {{-- yung icons --}}
-           <div class="flex items-center space-x-4">
+            {{-- yung icons --}}
+            <div class="flex items-center space-x-4">
 
 
-               {{-- listing a property button --}}
-               <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
-                   <div class="text-2xl">
-                       <i class="fas fa-house-flag"></i>
-                   </div>
-                   <div class="text-sx leading-3">Property</div>
-               </a>
+                {{-- listing a property button --}}
+                <a href="listproperty" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-house-flag"></i>
+                    </div>
+                    <div class="text-sx leading-3">Property</div>
+                </a>
 
 
-               {{-- account button --}}
-               <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
-                   <div class="text-2xl">
-                       <i class="fas fa-user"></i>
-                   </div>
-                   <div class="text-sx leading-3">Account</div>
-               </a>
-           </div>
-       </div>
-   </header>
+                {{-- account button --}}
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="text-sx leading-3">Account</div>
+                </a>
+            </div>
+        </div>
+    </header>
+
 
 {{-- navbar (1) --}}
    <div class="bg-gray-700">
@@ -144,7 +145,48 @@
 {{-- end of navbar --}}
 
 {{-- account wrapper --}}
+   <div class="container p-6 bg-white">
+        <div class="container pt-4 pb-4 mx-5" >
+            <div class="flex items-center">
+                <img src="https://www.svgrepo.com/show/507442/user-circle.svg" class="w-40 mr-10" alt="">
+                <h3 class="text-xl font-semibold">
+                    John Doe
+                </h3>
+                <i class="fa-solid fa-minus mx-4"></i>
+                <h5 class="text-sm font-light text-gray-400 hover:text-primary cursor-pointer">
+                    Edit Profile
+                </h5>
+            </div>
+        </div>
 
+        <div class="container gap-6 border-t pt-4 pb-16 items-start">
+
+            <div class=" bg-white px-4 pb-2 overflow-hidden">
+                <div class="mr-14">
+                    <h3 class="text-xl font-semibold">
+                        Rentals List
+                    </h3>
+                </div>
+            </div>
+
+            <div class="container border-t border-b rounded-md bg-white h-24">
+                {{-- idk --}}
+            </div>
+
+            <div class=" bg-white px-4 pb-2 overflow-hidden ">
+                <div class="mr-14 flex items-center">
+                    <h3 class="text-xl mt-10 font-semibold">
+                        Reviews and Feedback
+                    </h3>
+                </div>
+            </div>
+
+            <div class="container border-t border-b rounded-md bg-white h-24">
+                {{-- idk --}}
+            </div>
+
+        </div>
+   </div>
 {{-- account wrapper --}}
 
 {{-- Footer --}}
