@@ -144,21 +144,140 @@
 {{-- end of navbar --}}
 
 {{-- Listing Area --}}
-   <div class="container bg-white">
-        <div class="pt-10">
-            <div class="mt-11 flex justify-center relative">
-                <div class="text-black font-bold text-xl uppercase px-3 bg-white z-10 relative">
-                    Basic Information
-                </div>
-                <div class="absolute left-0 top-3 w-full border-b-2 border-gray-600"></div>
+
+{{-- basic info --}}
+    <div class="container mx-auto p-6 bg-white">
+        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Basic Information</div>
+
+        <div class="mx-36 my-20">
+            <div class="mb-6 mx-10 flex items-center">
+                <div class="text-base font-semibold mb-2">Property Type:</div>
+                    <select class="ml-7 rounded-md border border-gray-300 p-2 w-96">
+                        <option>Apartment</option>
+                        <option>Condominium</option>
+                        <option>House</option>
+                    </select>
             </div>
-            <div class="mt-11 flex-wrap relative">
-                <div class="text-black font-bold text-md px-3 bg-white z-10">
-                    Property Type:
+
+            <div class="mb-6 mx-10">
+                <div class="text-base font-semibold mb-2">Rental Terms:</div>
+                <div class="ml-36">
+                    <label class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2">
+                        <span class="font-semibold text-sm">For Long Term</span>
+                        <span class="text-xs text-gray-600 ml-1">(minimum of 6 months)</span>
+                    </label>
+
+                    <label class="flex items-center">
+                        <input type="checkbox" class="mr-2">
+                        <span class="font-semibold text-sm">For Short Term</span>
+                        <span class="text-xs text-gray-600 ml-1">(available for daily, weekly or monthly rent)</span>
+                    </label>
+                    <div class="text-xs text-gray-600 mt-1">Tip: You can pick both if applies.</div>
                 </div>
+            </div>
+
+            <div class="mx-10">
+
+                <div class="flex items-center">
+                    <div class="text-base font-semibold mb-2">Minimum Stay:</div>
+                    <input type="text" placeholder="ex: 2 months" class="rounded-md border border-gray-300 mx-7 w-96">
+                </div>
+
+                <div class="text-xs text-gray-600 ml-36 mt-1">Tip: Indicate how long is your minimum required stay for this property.</div>
             </div>
         </div>
-   </div>
+    </div>
+{{-- end of Basic Info --}}
+
+{{-- Rental Rates --}}
+    <div class="container mx-auto p-6 bg-white">
+        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Rental Rates</div>
+
+        <div class="mx-36 my-20">
+
+            <div class="mx-10 mt-5 p-10 border border-black rounded-md">
+
+                <div class="text-xs text-gray-600 ml-56 mt-1">Monthly Rate</div>
+
+                <div class="flex items-center">
+                    <div class="text-base font-semibold mb-2">Long Term Rental Rates:</div>
+                    <i class="fa-solid fa-peso-sign ml-4"></i>
+                    <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-6 w-96">
+                </div>
+            </div>
+
+            <div class="mx-10 mt-5 p-10 border border-black rounded-md">
+
+                <div class="text-xs text-gray-600 ml-56 mt-1">Daily Rate</div>
+
+                <div class="flex items-center">
+                    <div class="text-base font-semibold mb-2">Short Term Rental Rates:</div>
+                    <i class="fa-solid fa-peso-sign ml-4"></i>
+                    <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-6 w-96">
+                </div>
+
+                <div class="text-xs text-gray-600 ml-56 mt-5">Weekly Rate</div>
+                <div class="mx-48">
+                    <i class="fa-solid fa-peso-sign ml-3"></i>
+                    <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-5 w-96">
+                </div>
+
+                <div class="text-xs text-gray-600 ml-56 mt-5">Monthly Rate</div>
+                <div class="mx-48">
+                    <i class="fa-solid fa-peso-sign ml-3"></i>
+                    <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-5 w-96">
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+{{-- end of Rental Rates --}}
+
+{{-- Location and Address --}}
+    <div class="container mx-auto p-6 bg-white">
+        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Location and Address</div>
+
+        <div class="mx-36 my-20">
+            <div class="flex items-center py-3">
+                <div class="text-base font-semibold mr-1 mb-2">Uni Number or House Number: </div>
+                <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-12 w-96">
+            </div>
+
+            <div class="flex items-center py-3">
+                <div class="text-base font-semibold mb-2">Floor: </div>
+                <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-60 w-96">
+            </div>
+
+            <div class="flex items-center py-3">
+                <div class="text-base font-semibold mb-2">Street, neighborhood & Barangay: </div>
+                <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-7 w-96">
+            </div>
+
+            <div class="flex items-center py-3">
+                <div class="text-base font-semibold mr-3 mb-2">City: </div>
+                <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-60 w-96">
+            </div>
+        </div>
+    </div>
+{{-- end of Location and Address --}}
+
+{{-- Property Details --}}
+    <div class="container mx-auto p-6 bg-white">
+        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Property Details</div>
+
+        <div class="col-span-2 bg-white px-4 pb-2 shadow rounded-xl overflow-hidden">
+            <div class="grid grid-cols-1 gap-6 pt-4 pb-2 items-start">
+
+            </div>
+        </div>
+
+    </div>
+{{-- end of Property Details --}}
+
+
 {{-- End of Listing Area --}}
 
 {{-- Footer --}}

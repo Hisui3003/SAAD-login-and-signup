@@ -181,7 +181,7 @@
 
                         <div class="flex items-center">
                             <input type="checkbox" id="cat-2" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
-                            <label for="cat-2" class="text-gray-600 ml-3 cursor-pointer">Comdominium</label>
+                            <label for="cat-2" class="text-gray-600 ml-3 cursor-pointer">Condominium</label>
                         </div>
 
                         <div class="flex items-center">
