@@ -44,3 +44,7 @@ Route::get('rentals', function () {
 Route::get('user', function () {
     return view('user');
 });
+
+Route::get('addphotos', function () {
+    return view('addphotos');
+});

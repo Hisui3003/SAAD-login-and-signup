@@ -16,6 +16,7 @@
 
 
 </head>
+
 <body>
     {{-- ito yung header ng page 1 --}}
     <header class="py-1 shadow-sm bg-white">
@@ -51,7 +52,7 @@
 
 
                 {{-- account button --}}
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                <a href="user" class="text-center text-gray-700 hover:text-primary transition relative">
                     <div class="text-2xl">
                         <i class="fas fa-user"></i>
                     </div>

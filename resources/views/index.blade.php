@@ -51,7 +51,7 @@
 
 
                 {{-- account button --}}
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                <a href="user" class="text-center text-gray-700 hover:text-primary transition relative">
                     <div class="text-2xl">
                         <i class="fas fa-user"></i>
                     </div>
@@ -403,15 +403,7 @@
                     </a>
 
                     <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-square-instagram"></i>
                     </a>
                 </div>
             </div>

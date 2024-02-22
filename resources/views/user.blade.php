@@ -51,7 +51,7 @@
 
 
                 {{-- account button --}}
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                <a href="user" class="text-center text-gray-700 hover:text-primary transition relative">
                     <div class="text-2xl">
                         <i class="fas fa-user"></i>
                     </div>

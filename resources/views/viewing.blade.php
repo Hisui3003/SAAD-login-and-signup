@@ -51,7 +51,7 @@
 
 
                 {{-- account button --}}
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                <a href="user" class="text-center text-gray-700 hover:text-primary transition relative">
                     <div class="text-2xl">
                         <i class="fas fa-user"></i>
                     </div>
@@ -233,20 +233,20 @@
 
                 {{-- landlord info --}}
                 <div class="col-span-1 bg-white px-2 pb-3 overflow-hidden">
-                    <div class="divide-y divide-gray-200 space-y-5">
+                    <div class="divide-y divide-gray-200 space-y-3">
                         <div class="py-10">
                             {{-- name --}}
-                            <h2 class="text-2xl font-semibold py-2">
+                            <h2 class="text-2xl font-semibold">
                                 Jhon Doe
                             </h2>
 
                             {{-- status --}}
-                            <h4 class="text-md py-2">
+                            <h4 class="text-md">
                                 Landlord
                             </h4>
 
                             {{-- number --}}
-                            <h2 class="text-2xl font-semibold py-2">
+                            <h2 class="text-xl font-semibold">
                                 +63 123 456 7890
                             </h2>
                         </div>
