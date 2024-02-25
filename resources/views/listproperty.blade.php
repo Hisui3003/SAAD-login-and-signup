@@ -373,11 +373,13 @@
 {{-- end of Title and desc --}}
 
 {{-- Go Button --}}
-    <div class="container mx-auto p-6 bg-white">
+<div class="container mx-auto p-6 bg-white">
+    <a href="addphotos">
         <button class="bg-primary hover:bg-transparent border hover:border-primary text-white hover:text-primary font-bold py-2 px-4 rounded-md my-20 mx-auto block">
             Create listing and proceed to adding photos
         </button>
-    </div>
+    </a>
+</div>
 
 
 {{-- End of Listing Area --}}

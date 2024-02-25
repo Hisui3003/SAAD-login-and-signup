@@ -145,9 +145,9 @@
 {{-- end of navbar --}}
 
 {{-- viewing --}}
-    <div class="container grid grid-cols-5 gap-6 pt-4 pb-16 items-start">
+    <div class="container grid grid-cols-6 gap-6 pt-4 pb-16 items-start">
         {{-- product --}}
-        <div class="col-span-3 bg-white px-4 py-6 shadow rounded overflow-hidden">
+        <div class="col-span-4 bg-white px-4 py-6 border-l border-r rounded overflow-hidden">
 
             {{-- imagess --}}
             <div class="container border-b grid grid-cols-1 gap-6 pt-4 pb-3 items-start">
@@ -187,66 +187,198 @@
                 <h1 class="text-xl font-light text-primary px-5">FORT BONIFACIO, TAGUIG</h1>
             </div>
 
+            {{-- Description --}}
+            <div class="my-3">
+                <h3 class="px-4 font-semibold">Description</h3>
+                <div class="mt-4 flex rounded-xl bg-gray-50 shadow-md py-2 px-5">
+                    <p class="font-thin">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                    </p>
+                </div>
+            </div>
+
             {{-- table/details --}}
-            <table class="border rounded-lg overflow-hidden">
-                <tr class="border-b">
-                  <th class="py-2 px-4 font-semibold text-left">Details</th>
-                  <th class="py-2 px-4 font-semibold text-left">Amenities</th>
-                  <th class="py-2 px-4 font-semibold text-left">Monthly Rate</th>
-                </tr>
-                <tr>
-                  <td class="py-4 px-4 align-top">
-                    McKinley West Village<br>
-                    LA: 188 sq.m.<br>
-                    FA: 515 sq.m.<br>
-                    5 bedrooms<br>
-                    6 T&B<br>
-                    4 car garage<br>
-                    Fully Finished<br>
-                    High ceiling<br>
-                    With terrace and balconies, AC, water heater.
-                  </td>
-                  <td class="py-4 px-4 align-top">
-                    Air Conditioning<br>
-                    Garage<br>
-                    24-hours Security
-                  </td>
-                  <td class="py-4 px-4 align-top">
-                    ₱30,000
-                  </td>
-                </tr>
-            </table>
+            <div class="border-b">
+                <table class="border rounded-lg overflow-hidden">
+                    <tr class="border-b">
+                      <th class="py-2 px-4 font-semibold text-left">Details</th>
+                      <th class="py-2 px-4 font-semibold text-left">Amenities</th>
+                      <th class="py-2 px-4 font-semibold text-left">Monthly Rate</th>
+                    </tr>
+                    <tr>
+                      <td class="py-4 px-4 align-top">
+                        McKinley West Village<br>
+                        LA: 188 sq.m.<br>
+                        FA: 515 sq.m.<br>
+                        5 bedrooms<br>
+                        6 T&B<br>
+                        4 car garage<br>
+                        Fully Finished<br>
+                        High ceiling<br>
+                        With terrace and balconies, AC, water heater.
+                      </td>
+                      <td class="py-4 px-4 align-top">
+                        Air Conditioning<br>
+                        Garage<br>
+                        24-hours Security
+                      </td>
+                      <td class="py-4 px-4 align-top">
+                        ₱30,000
+                      </td>
+                    </tr>
+                </table>
+            </div>
+
+            {{-- Reviews & Feedback --}}
+            <h2 class="my-3 px-4 font-semibold">Feedback & Reviews</h2>
+
+            <div class="py-4 px-5">
+            <div>
+                <form class="space-y-4">
+                    <div>
+                        <label for="comment" class="block font-semibold">Review:</label>
+                        <textarea id="comment" name="comment" rows="4" class="w-full border rounded-md"></textarea>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <label class="block font-semibold mr-2">Rating:</label>
+                            <div id="star-rating" class="flex items-center">
+                                <input type="hidden" name="rating" id="rating" value="0">
+                                <label for="star1" class="cursor-pointer text-gray-400">
+                                    <input type="radio" id="star1" name="star" value="1" class="hidden" />
+                                    ★
+                                </label>
+
+                                <label for="star2" class="cursor-pointer text-gray-400">
+                                    <input type="radio" id="star2" name="star" value="2" class="hidden" />
+                                    ★
+                                </label>
+
+                                <label for="star3" class="cursor-pointer text-gray-400">
+                                    <input type="radio" id="star3" name="star" value="3" class="hidden" />
+                                    ★
+                                </label>
+
+                                <label for="star4" class="cursor-pointer text-gray-400">
+                                    <input type="radio" id="star4" name="star" value="4" class="hidden" />
+                                    ★
+                                </label>
+
+                                <label for="star5" class="cursor-pointer text-gray-400">
+                                    <input type="radio" id="star5" name="star" value="5" class="hidden" />
+                                    ★
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="bg-gray-500 hover:bg-red-500 hover:border-red-500 text-white px-4 py-2 rounded-md">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="submitted-feedback" class="mt-8 hidden">
+                    <h2 class="text-xl font-semibold mb-2">Feedback:</h2>
+                    <div id="feedback-content">
+                        <!-- Feedback will be displayed here -->
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                // Function to generate star icons based on rating
+                function generateStarRating(rating, colorClass) {
+                  let stars = '';
+                  for (let i = 0; i < rating; i++) {
+                    stars += `<span class="${colorClass}">★</span>`;
+                  }
+                  return stars;
+                }
+
+                // Function to handle hover effect on stars
+                function handleStarHover(starNum) {
+                const stars = document.querySelectorAll('#star-rating label');
+                stars.forEach((star, index) => {
+                    if (index < starNum) {
+                        star.classList.add('text-red-500'); // Changed to red-500
+                    } else {
+                        star.classList.remove('text-red-500'); // Changed to red-500
+                    }
+                    });
+                }
+
+                // Function to handle click event on stars
+                function handleStarClick(starNum, colorClass) {
+                  document.getElementById('rating').value = starNum;
+                  handleStarHover(starNum, colorClass);
+                }
+
+                // Event listeners for hover and click events on stars
+                document.querySelectorAll('#star-rating label').forEach((star, index) => {
+                  star.addEventListener('mouseover', () => handleStarHover(index + 1, 'text-yellow-400'));
+                  star.addEventListener('mouseout', () => handleStarHover(document.getElementById('rating').value, 'text-yellow-400'));
+                  star.addEventListener('click', () => handleStarClick(index + 1, 'text-yellow-400'));
+                });
+
+                // Function to handle form submission
+                document.querySelector('form').addEventListener('submit', function(e) {
+                  e.preventDefault();
+
+                  const comment = document.getElementById('comment').value;
+                  const rating = document.getElementById('rating').value;
+                  const userImage = 'https://www.svgrepo.com/show/525577/user-circle.svg';
+
+                  const feedbackContent = document.getElementById('feedback-content');
+                  feedbackContent.innerHTML = `
+                    <div class="flex items-center">
+                      <img src="${userImage}" class="w-20 h-auto rounded-full mr-4" alt="User Image">
+                      <div>
+                        <p class="font-semibold">User Name</p>
+                        <p class="mr-3">${generateStarRating(rating, 'text-red-500')}</p>
+                        <p class="mr-3">${comment}</p>
+                      </div>
+                    </div>
+                  `;
+
+                  document.getElementById('submitted-feedback').classList.remove('hidden');
+                });
+              </script>
+
+
+            </div>
 
         </div>
         {{-- end of product --}}
 
         {{-- user info --}}
         <div class="col-span-2 bg-white px-4 pb-2 shadow rounded-xl overflow-hidden">
+
             <div class="grid grid-cols-2 gap-6 pt-4 pb-2 items-start">
 
                 {{-- image --}}
                 <div class="col-span-1 bg-white px-2 pb-3 overflow-hidden">
-                    <div class="flex items-center justify-center">
-                        <img src="https://www.svgrepo.com/show/507442/user-circle.svg" class="w-52" alt="">
+                    <div class="flex items-center place-items-center justify-center">
+                        <img src="https://www.svgrepo.com/show/507442/user-circle.svg" class="w-24" alt="">
                     </div>
                 </div>
 
                 {{-- landlord info --}}
-                <div class="col-span-1 bg-white px-2 pb-3 overflow-hidden">
+                <div class="col-span-1 bg-white pb-3 overflow-hidden">
                     <div class="divide-y divide-gray-200 space-y-3">
-                        <div class="py-10">
+                        <div class="pt-3">
                             {{-- name --}}
-                            <h2 class="text-2xl font-semibold">
+                            <h2 class="text-xl font-semibold">
                                 Jhon Doe
                             </h2>
 
                             {{-- status --}}
-                            <h4 class="text-md">
+                            <h4 class="text-sm">
                                 Landlord
                             </h4>
 
                             {{-- number --}}
-                            <h2 class="text-xl font-semibold">
+                            <h2 class="text-md font-semibold">
                                 +63 123 456 7890
                             </h2>
                         </div>

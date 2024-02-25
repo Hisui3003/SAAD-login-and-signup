@@ -409,17 +409,20 @@
     </div>
     {{-- end of Other Photos --}}
 
-    {{-- Go Button --}}
+    {{-- upload Button mag save niya lang yung mga images--}}
     <div class="container mx-auto p-6 bg-white">
-        <button class="bg-primary hover:bg-transparent border hover:border-primary text-white hover:text-primary font-bold py-2 px-4 rounded-md my-20 mx-auto block">
-            Upload photos
-        </button>
+        <a href="">
+            <button class="bg-primary hover:bg-transparent border hover:border-primary text-white hover:text-primary font-bold py-2 px-4 rounded-md mt-20 mx-auto block">
+                Upload Photos
+            </button>
+        </a>
     </div>
 
     {{-- Go to MAP Button --}}
-    <div class="container justify-left p-6 bg-white">
-        <button class="bg-primary hover:bg-transparent border hover:border-primary text-white hover:text-primary font-bold py-2 px-4 rounded-md my-20 mx-auto block">
+    <div class="container p-6 bg-white flex justify-end">
+        <button class="bg-gray-500 hover:bg-transparent border hover:border-primary text-white hover:text-primary font-bold py-2 px-4 rounded-md block">
             Map
+            <i class="fa-solid fa-caret-right"></i>
         </button>
     </div>
 

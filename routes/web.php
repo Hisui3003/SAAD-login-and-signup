@@ -48,3 +48,7 @@ Route::get('user', function () {
 Route::get('addphotos', function () {
     return view('addphotos');
 });
+
+Route::get('map', function () {
+    return view('map');
+});
