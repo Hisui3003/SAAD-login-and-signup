@@ -25,8 +25,14 @@ Route::get('login', function () {
     return view('login');
 });
 
-Route::get('register', function () {
-    return view('register');
+
+//two register
+Route::get('landlord_register', function () {
+    return view('landlord_register');
+});
+
+Route::get('renter_register', function () {
+    return view('renter_register');
 });
 
 Route::get('listproperty', function () {
@@ -43,6 +49,10 @@ Route::get('rentals', function () {
 
 Route::get('user', function () {
     return view('user');
+});
+
+Route::get('adminpage', function () {
+    return view('adminpage');
 });
 
 Route::get('addphotos', function () {

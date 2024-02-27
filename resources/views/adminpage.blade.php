@@ -16,7 +16,6 @@
 
 
 </head>
-
 <body>
     {{-- ito yung header ng page 1 --}}
     <header class="py-1 shadow-sm bg-white">
@@ -61,7 +60,6 @@
             </div>
         </div>
     </header>
-
 
 {{-- navbar (1) --}}
    <div class="bg-gray-700">
@@ -145,73 +143,67 @@
    </div>
 {{-- end of navbar --}}
 
-{{-- login --}}
-   <div class="container py-16">
-        <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
-            <h2 class="text-2xl uppercase font-medium mb-1">Login</h2>
-            <p class="text-gray-600 mb-6 text-sm">
-                Welcome to
-                <span class="font-semibold text-lg text-center text-red-500 mb-2">FindFlat</span>
-            </p>
-            <form action="">
-                <div class="space-y-4">
-                    <div>
-                        <label class="text-gray-500 mb-2 block">Email Address</label>
-                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Email Address">
-                    </div>
-                    <div>
-                        <label class="text-gray-500 mb-2 block">Password</label>
-                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Password">
-                    </div>
-
-                    <div class="flex items-center justify-between mt-6">
-                        <div class="flex items-center">
-                            <input type="checkbox" id="agreement" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
-                            <label for="agreement" class="text-gray-500 ml-3 cursor-pointer">Remember me</label>
-                        </div>
-                        <a href="#" class="text-primary">Forgot Password</a>
-                    </div>
-                    <div class="mt-4">
-                        <button type="submit"
-                        class="block w-full py-2 text-center text-white bg-red-600 border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">
-                            Login
-                        </button>
-                    </div>
-                </div>
-            </form>
-
-            {{-- login w/ --}}
-            {{-- <div class="mt-6 flex justify-center relative">
-                <div class="text-gray-600 uppercase px-3 bg-white z-10 relative"> Or Login with</div>
-                <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
-            </div>
-            <div class="flex mt-4 gap-4">
-                <a href="#" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-roboto fonr-medium text-sm hover:bg-blue-700">Facebook</a>
-                <a href="#" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-roboto fonr-medium text-sm hover:bg-yellow-500">Google</a>
-            </div> --}}
-            {{-- end of login w/ --}}
-
-            <div class="mt-4 text-gray-500 text-center">
-                <p>Don't have an Account? <a href="#" class="text-primary text-semibold" onclick="toggleRegisterOptions()">Register Now</a></p>
-                <div id="registerOptions" class="hidden mt-4 justify-center">
-                    {{-- <button href="renter_register" class="underline border border-primary bg-transparent hover:bg-orange-400 text-primary hover:text-white font-bold py-2 px-4 mr-2 rounded w-32 h-10">Renter</button>
-                    <button href="landlord_register" class="underline border border-primary bg-transparent hover:bg-primary text-primary hover:text-white font-bold py-2 px-4 rounded w-32 h-10">Landlord</button> --}}
-                    <div class="flex mt-4 gap-4">
-                        <a href="renter_register" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-roboto fonr-medium text-sm hover:bg-blue-700">Renter</a>
-                        <a href="landlord_register" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-roboto fonr-medium text-sm hover:bg-yellow-500">Landlord</a>
-                    </div>
-                </div>
+{{-- account wrapper --}}
+<div class="container p-6 bg-white">
+    <div class="grid grid-cols-5 gap-4">
+        <div class="col-span-1 bg-gray-300 rounded-lg shadow-sm p-4 flex flex-col items-center justify-center">
+            
+            <div class="flex items-center justify-center">
+                <i class="fa-solid fa-user-tie"></i>
+                <h3 class="py-5 pl-3 text-xl font-bold uppercase">Admin</h3>
             </div>
 
-            <script>
-                function toggleRegisterOptions() {
-                    var options = document.getElementById("registerOptions");
-                    options.classList.toggle("hidden");
-                }
-            </script>
+            <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Verification</button>
+            <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Button</button>
+            <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Button</button>    
         </div>
-   </div>
-{{-- end of login --}}
+
+        <div class="col-span-4 bg-gray-200 rounded-lg shadow-sm">
+            <div class="container mx-auto">
+                <div class="overflow-x-auto py-5 my-10 bg-gray-300 rounded-lg">
+                  <table class="table-auto w-full">
+                    <thead>
+                      <tr>
+                        <th class="px-4 py-2 text-gray-800">ID</th>
+                        <th class="px-4 py-2 text-gray-800">Name</th>
+                        <th class="px-4 py-2 text-gray-800">Email</th>
+                        <th class="py-2 text-gray-800">Verification</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b border-gray-400">
+                        <td class="px-4 py-2">1</td>
+                        <td class="px-4 py-2">John Doe</td>
+                        <td class="px-4 py-2">john@example.com</td>
+                        <td class="px-4 py-2 text-center">/</td>
+                      </tr>
+                      <tr class="border-b border-gray-400">
+                        <td class="px-4 py-2">2</td>
+                        <td class="px-4 py-2">Jane Smith</td>
+                        <td class="px-4 py-2">jane@example.com</td>
+                        <td class="px-4 py-2 text-center">/</td>
+                      </tr>
+                      <tr class="border-b border-gray-400">
+                        <td class="px-4 py-2">3</td>
+                        <td class="px-4 py-2">John Doe</td>
+                        <td class="px-4 py-2">john@example.com</td>
+                        <td class="px-4 py-2 text-center">/</td>
+                      </tr>
+                      <tr class="border-b border-gray-400">
+                        <td class="px-4 py-2">4</td>
+                        <td class="px-4 py-2">Jane Smith</td>
+                        <td class="px-4 py-2">jane@example.com</td>
+                        <td class="px-4 py-2 text-center">/</td>
+                      </tr>
+                      <!-- Add more rows as needed -->
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{-- account wrapper --}}
 
 {{-- Footer --}}
 <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
@@ -229,15 +221,7 @@
                 </a>
 
                 <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-square-instagram"></i>
                 </a>
             </div>
         </div>
@@ -252,4 +236,3 @@
 
 </body>
 </html>
-

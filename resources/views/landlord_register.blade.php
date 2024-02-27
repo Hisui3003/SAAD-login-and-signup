@@ -145,73 +145,77 @@
    </div>
 {{-- end of navbar --}}
 
-{{-- login --}}
-   <div class="container py-16">
-        <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
-            <h2 class="text-2xl uppercase font-medium mb-1">Login</h2>
+{{-- register --}}
+   <div class="container pt-16 pb-28 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.pexels.com/photos/8292894/pexels-photo-8292894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <div class="max-w-lg mx-auto bg-white shadow-md px-6 py-7 rounded-md overflow-hidden">
+            <h2 class="text-2xl uppercase font-medium mb-1">Signup</h2>
             <p class="text-gray-600 mb-6 text-sm">
-                Welcome to
+                Register to
                 <span class="font-semibold text-lg text-center text-red-500 mb-2">FindFlat</span>
             </p>
             <form action="">
                 <div class="space-y-4">
                     <div>
-                        <label class="text-gray-500 mb-2 block">Email Address</label>
+                        <div class="flex">
+                            <label class="text-gray-500 mb-2 block">Full Name </label>
+                            <p class="text-primary">*</p>
+                        </div>
+                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Full Name">
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <label class="text-gray-500 mb-2 block">Email Address</label>
+                            <p class="text-primary">*</p>
+                        </div>
                         <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Email Address">
                     </div>
                     <div>
-                        <label class="text-gray-500 mb-2 block">Password</label>
+                        <div class="flex">
+                            <label class="text-gray-500 mb-2 block">Password</label>
+                            <p class="text-primary">*</p>
+                        </div>
                         <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Password">
                     </div>
+                    <div>
+                        <div class="flex">
+                            <label class="text-gray-500 mb-2 block">Confirm Password</label>
+                            <p class="text-primary">*</p>
+                        </div>
+                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Confirm Password">
+                    </div>
 
-                    <div class="flex items-center justify-between mt-6">
+                    {{-- <div class="flex items-center justify-between mt-6">
                         <div class="flex items-center">
                             <input type="checkbox" id="agreement" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
                             <label for="agreement" class="text-gray-500 ml-3 cursor-pointer">Remember me</label>
                         </div>
-                        <a href="#" class="text-primary">Forgot Password</a>
-                    </div>
+                    </div> --}}
                     <div class="mt-4">
                         <button type="submit"
                         class="block w-full py-2 text-center text-white bg-red-600 border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">
-                            Login
+                            Sign up
                         </button>
                     </div>
                 </div>
             </form>
 
-            {{-- login w/ --}}
+            {{-- register w/ --}}
             {{-- <div class="mt-6 flex justify-center relative">
-                <div class="text-gray-600 uppercase px-3 bg-white z-10 relative"> Or Login with</div>
+                <div class="text-gray-600 uppercase px-3 bg-white z-10 relative"> Or Register with</div>
                 <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
             </div>
             <div class="flex mt-4 gap-4">
                 <a href="#" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-roboto fonr-medium text-sm hover:bg-blue-700">Facebook</a>
                 <a href="#" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-roboto fonr-medium text-sm hover:bg-yellow-500">Google</a>
             </div> --}}
-            {{-- end of login w/ --}}
+            {{-- end of register w/ --}}
 
-            <div class="mt-4 text-gray-500 text-center">
-                <p>Don't have an Account? <a href="#" class="text-primary text-semibold" onclick="toggleRegisterOptions()">Register Now</a></p>
-                <div id="registerOptions" class="hidden mt-4 justify-center">
-                    {{-- <button href="renter_register" class="underline border border-primary bg-transparent hover:bg-orange-400 text-primary hover:text-white font-bold py-2 px-4 mr-2 rounded w-32 h-10">Renter</button>
-                    <button href="landlord_register" class="underline border border-primary bg-transparent hover:bg-primary text-primary hover:text-white font-bold py-2 px-4 rounded w-32 h-10">Landlord</button> --}}
-                    <div class="flex mt-4 gap-4">
-                        <a href="renter_register" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-roboto fonr-medium text-sm hover:bg-blue-700">Renter</a>
-                        <a href="landlord_register" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-roboto fonr-medium text-sm hover:bg-yellow-500">Landlord</a>
-                    </div>
-                </div>
-            </div>
-
-            <script>
-                function toggleRegisterOptions() {
-                    var options = document.getElementById("registerOptions");
-                    options.classList.toggle("hidden");
-                }
-            </script>
+            <p class="mt-4 text-gray-500 text-center">
+                Already got an Account? <a href="login" class="text-primary text-semibold">Login Now</a>
+            </p>
         </div>
    </div>
-{{-- end of login --}}
+{{-- end of register --}}
 
 {{-- Footer --}}
 <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
