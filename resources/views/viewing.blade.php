@@ -14,6 +14,16 @@
    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+   <style>
+        .image-zoom {
+            transition: transform 0.3s ease-in-out;
+            object-fit: cover;
+        }
+
+        .image-zoom:hover {
+            transform: scale(3);
+        }
+    </style>
 
 </head>
 <body>
@@ -150,7 +160,22 @@
         <div class="col-span-4 bg-white px-4 py-6 border-l border-r rounded overflow-hidden">
 
             {{-- imagess --}}
+
             <div class="container border-b grid grid-cols-1 gap-6 pt-4 pb-3 items-start">
+                <div class="gap-6">
+                    <div>
+                        <img class="w-full " src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/2134e42629d64f.webp" alt="">
+                        <div class="grid grid-cols-5 gap-4 mt-4">
+                            <img class="w-full h-auto object-cover image-zoom" src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/0f2247470cb425.webp" alt="">
+                            <img class="w-full h-auto object-cover image-zoom" src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/59610ab9449d3a.webp" alt="">
+                            <img class="w-full h-auto object-cover image-zoom" src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/5237c4147ce4af.webp" alt="">
+                            <img class="w-full h-auto object-cover image-zoom" src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/f1b5cc7d970b7c.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- <div class="container border-b grid grid-cols-1 gap-6 pt-4 pb-3 items-start">
                 <div class="gap-6">
                     <div>
                         <img id="mainImage" class="w-full" src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/2134e42629d64f.webp" alt="">
@@ -171,7 +196,7 @@
                     mainImage.src = element.src;
                     element.src = tempSrc;
                 }
-            </script>
+            </script> --}}
             {{-- end of images --}}
 
 
@@ -230,7 +255,7 @@
             </div>
 
             {{-- Reviews & Feedback --}}
-            <h2 class="my-3 px-4 font-semibold">Feedback & Reviews</h2>
+            {{-- <h2 class="my-3 px-4 font-semibold">Feedback & Reviews</h2>
 
             <div class="py-4 px-5">
             <div>
@@ -284,9 +309,9 @@
                         <!-- Feedback will be displayed here -->
                     </div>
                 </div>
-            </div>
+                </div>
 
-            <script>
+                <script>
                 // Function to generate star icons based on rating
                 function generateStarRating(rating, colorClass) {
                   let stars = '';
@@ -346,7 +371,40 @@
               </script>
 
 
+            </div> --}}
+
+            {{-- Reviews & Feedback --}}
+{{-- <h2 class="my-3 px-4 font-semibold">Feedback & Reviews</h2>
+
+<div class="py-4 px-5">
+    <form class="space-y-4" action="submit_feedback.php" method="post">
+        <div>
+            <label for="comment" class="block font-semibold">Review:</label>
+            <textarea id="comment" name="comment" rows="4" class="w-full border rounded-md"></textarea>
+        </div>
+
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <label class="block font-semibold mr-2">Rating:</label>
+                <div id="star-rating" class="flex items-center">
+                    <input type="hidden" name="rating" id="rating" value="0">
+                    ★★★★★
+                </div>
             </div>
+
+            <div>
+                <button type="submit" class="bg-gray-500 hover:bg-red-500 hover:border-red-500 text-white px-4 py-2 rounded-md">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="submitted-feedback" class="mt-8 hidden">
+        <h2 class="text-xl font-semibold mb-2">Feedback:</h2>
+        <div id="feedback-content">
+            <!-- Feedback will be displayed here -->
+        </div>
+    </div>
+</div> --}}
 
         </div>
         {{-- end of product --}}

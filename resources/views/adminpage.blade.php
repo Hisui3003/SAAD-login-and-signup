@@ -146,21 +146,36 @@
 {{-- account wrapper --}}
 <div class="container p-6 bg-white">
     <div class="grid grid-cols-5 gap-4">
-        <div class="col-span-1 bg-gray-300 rounded-lg shadow-sm p-4 flex flex-col items-center justify-center">
+        {{-- <div class="col-span-1 bg-gray-300 rounded-lg shadow-sm p-4 flex flex-col items-center justify-center">
 
             <div class="flex items-center justify-center">
                 <i class="fa-solid fa-user-tie"></i>
                 <h3 class="py-5 pl-3 text-xl font-bold uppercase">Admin</h3>
             </div>
+        </div> --}}
 
-            <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Verification</button>
-            <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Button</button>
-            <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Button</button>
-        </div>
+        <div class="col-span-5 bg-gray-200 rounded-lg shadow-sm">
 
-        <div class="col-span-4 bg-gray-200 rounded-lg shadow-sm">
-            <div class="container mx-auto">
-                <div class="overflow-x-auto py-5 my-10 bg-gray-300 rounded-lg">
+            <div class="container pt-4 pb-4 mt-5 mx-5" >
+                <div class="flex items-center uppercase">
+                    <img src="https://www.svgrepo.com/show/41173/admin-with-cogwheels.svg" class="w-40 mr-10" alt="">
+                    <h3 class="text-xl font-semibold">
+                        Admin
+                    </h3>
+                </div>
+            </div>
+
+            {{-- landlord --}}
+            <div class="container mt-8 mx-auto border-t border-gray-400 ">
+                <div class="px-4 pb-2 overflow-hidden">
+                    <div class="mr-14 flex items-center">
+                        <h3 class="text-xl mt-5 font-semibold">
+                            Landlord Verification
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto py-5 my-3 bg-gray-300 rounded-lg">
                     <table class="table-auto w-full border-transparent">
                         <thead>
                             <tr>
@@ -175,18 +190,64 @@
                                 <td class="px-4 py-2 border-b border-gray-400">1</td>
                                 <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
                                 <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
-                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-2 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
                             </tr>
                             <tr>
                                 <td class="px-4 py-2 border-b border-gray-400">2</td>
                                 <td class="px-4 py-2 border-b border-gray-400">Jane Smith</td>
                                 <td class="px-4 py-2 border-b border-gray-400">jane@example.com</td>
-                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-2 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
                             </tr>
                             <!-- Add more rows as needed -->
                         </tbody>
                     </table>
                 </div>
+            </div>
+
+            {{-- properties --}}
+            <div class="container mt-8 mx-auto">
+
+                <div class="px-4 pb-2 overflow-hidden">
+                    <div class="mr-14 flex items-center">
+                        <h3 class="text-xl mt-5 font-semibold">
+                            Properties Verification
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto py-5 my-3 bg-gray-300 rounded-lg">
+                    <table class="table-auto w-full border-transparent">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 border-b border-r border-gray-400" style="width: 20%;">Photo</th>
+                                <th class="px-4 py-2 border-b border-r border-gray-400" style="width: 30%;">Landlord Name</th>
+                                <th class="px-4 py-2 border-b border-r border-gray-400" style="width: 35%;">Place Name</th>
+                                <th class="py-2 px-3 text-gray-800 border-b border-gray-400" style="width: 15%;">Verification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/d81cc540022e2a.webp" alt="Property Photo 2"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">Jane Smith</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">For Rent: 2 Storey House and Lot at M Residences, Taguig City</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            {{--  --}}
+            <div class="container mt-8 mx-auto">
+
             </div>
         </div>
     </div>
