@@ -147,7 +147,7 @@
 <div class="container p-6 bg-white">
     <div class="grid grid-cols-5 gap-4">
         <div class="col-span-1 bg-gray-300 rounded-lg shadow-sm p-4 flex flex-col items-center justify-center">
-            
+
             <div class="flex items-center justify-center">
                 <i class="fa-solid fa-user-tie"></i>
                 <h3 class="py-5 pl-3 text-xl font-bold uppercase">Admin</h3>
@@ -155,49 +155,37 @@
 
             <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Verification</button>
             <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Button</button>
-            <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Button</button>    
+            <button class="bg-transparent hover:border-b-2 hover:border-t-2 hover:border-primary hover:text-primary font-bold py-2 px-16 mb-2">Button</button>
         </div>
 
         <div class="col-span-4 bg-gray-200 rounded-lg shadow-sm">
             <div class="container mx-auto">
                 <div class="overflow-x-auto py-5 my-10 bg-gray-300 rounded-lg">
-                  <table class="table-auto w-full">
-                    <thead>
-                      <tr>
-                        <th class="px-4 py-2 text-gray-800">ID</th>
-                        <th class="px-4 py-2 text-gray-800">Name</th>
-                        <th class="px-4 py-2 text-gray-800">Email</th>
-                        <th class="py-2 text-gray-800">Verification</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="border-b border-gray-400">
-                        <td class="px-4 py-2">1</td>
-                        <td class="px-4 py-2">John Doe</td>
-                        <td class="px-4 py-2">john@example.com</td>
-                        <td class="px-4 py-2 text-center">/</td>
-                      </tr>
-                      <tr class="border-b border-gray-400">
-                        <td class="px-4 py-2">2</td>
-                        <td class="px-4 py-2">Jane Smith</td>
-                        <td class="px-4 py-2">jane@example.com</td>
-                        <td class="px-4 py-2 text-center">/</td>
-                      </tr>
-                      <tr class="border-b border-gray-400">
-                        <td class="px-4 py-2">3</td>
-                        <td class="px-4 py-2">John Doe</td>
-                        <td class="px-4 py-2">john@example.com</td>
-                        <td class="px-4 py-2 text-center">/</td>
-                      </tr>
-                      <tr class="border-b border-gray-400">
-                        <td class="px-4 py-2">4</td>
-                        <td class="px-4 py-2">Jane Smith</td>
-                        <td class="px-4 py-2">jane@example.com</td>
-                        <td class="px-4 py-2 text-center">/</td>
-                      </tr>
-                      <!-- Add more rows as needed -->
-                    </tbody>
-                  </table>
+                    <table class="table-auto w-full border-transparent">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">ID</th>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">Name</th>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">Email</th>
+                                <th class="py-2 text-gray-800 border-b border-gray-400">Verification</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">1</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-2 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">2</td>
+                                <td class="px-4 py-2 border-b border-gray-400">Jane Smith</td>
+                                <td class="px-4 py-2 border-b border-gray-400">jane@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-2 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
