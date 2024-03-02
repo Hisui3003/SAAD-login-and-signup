@@ -62,3 +62,7 @@ Route::get('addphotos', function () {
 Route::get('map', function () {
     return view('map');
 });
+
+Route::get('adminmanage', function () {
+    return view('adminmanage');
+});

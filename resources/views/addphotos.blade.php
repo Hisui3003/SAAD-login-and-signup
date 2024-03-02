@@ -148,266 +148,58 @@
     <div class="container mx-auto p-6 bg-white">
         <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Adding Photos</div>
 
-        <div class="mx-36 my-20">
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-16">Primary Photo:</div>
+        <div class="mx-auto my-20">
 
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="primaryimg" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
+            {{-- Center the elements horizontally --}}
+            <div class="mb-6 mx-10">
+                {{-- Text label --}}
+                <div class="text-sm font-bold flex justify-start items-center mb-2 ml-96">Photos:</div>
+
+                {{-- Center the elements horizontally --}}
+                <div class="flex justify-center items-center">
+
+                    {{-- File input button --}}
+                    <div class="relative">
+                        <input type="file" accept=".png, .jpg" id="primaryimg" style="display: none;">
+                        <button onclick="document.getElementById('primaryimg').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-24 px-56 rounded-xl flex items-center">
+                            <i class="fa-solid fa-image mr-2"></i>
+                            Select Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Container for showing images --}}
+            <div class="border p-4 grid grid-cols-3 gap-4">
+                <div class="relative overflow-hidden rounded-lg bg-gray-200">
+                    <img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/59610ab9449d3a.webp" alt="" class="w-full h-auto">
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg bg-gray-200">
+                    <img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/59610ab9449d3a.webp" alt="" class="w-full h-auto">
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg bg-gray-200">
+                    <img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/59610ab9449d3a.webp" alt="" class="w-full h-auto">
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg bg-gray-200">
+                    <img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/59610ab9449d3a.webp" alt="" class="w-full h-auto">
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg bg-gray-200">
+                    <img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/59610ab9449d3a.webp" alt="" class="w-full h-auto">
+                </div>
+                <!-- Add more image containers as needed -->
+                <!-- Example: -->
+                <!-- <div class="relative overflow-hidden rounded-lg bg-gray-200">
+                    <img src="image-url" alt="" class="w-full h-auto">
+                </div> -->
             </div>
         </div>
     </div>
+
 {{-- end of primary photo --}}
-
-    {{-- Living Room & Interior Photos --}}
-    <div class="container mx-auto p-6 bg-white">
-        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Living Room & Interior Photos</div>
-
-        <div class="mx-36 my-20">
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">1 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="interior1" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">2 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="interior2" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">3 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="interior3" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-        </div>
-    </div>
-    {{-- end of Living Room & Interior Photos --}}
-
-    {{-- Bedroom Photos --}}
-    <div class="container mx-auto p-6 bg-white">
-        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Bedroom Photos</div>
-
-        <div class="mx-36 my-20">
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">1 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="bed1" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">2 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="bed2" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">3 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="bed3" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-        </div>
-    </div>
-    {{-- end of Bedroom Photos --}}
-
-    {{-- Bathroom Photos --}}
-    <div class="container mx-auto p-6 bg-white">
-        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Bathroom Photos</div>
-
-        <div class="mx-36 my-20">
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">1 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="bath1" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">2 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="bath2" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">3 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="bath3" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-        </div>
-    </div>
-    {{-- end of Bathroom Photos --}}
-
-    {{-- Amenities Photos --}}
-    <div class="container mx-auto p-6 bg-white">
-        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Amenities Photos</div>
-
-        <div class="mx-36 my-20">
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">1 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="amen1" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">2 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="amen2" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">3 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="amen3" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-        </div>
-    </div>
-    {{-- end of Amenities Photos --}}
-
-    {{-- Building / Exterior Photos --}}
-    <div class="container mx-auto p-6 bg-white">
-        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Building / Exterior Photos</div>
-
-        <div class="mx-36 my-20">
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">1 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="ext1" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">2 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="ext2" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">3 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="ext3" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-        </div>
-    </div>
-    {{-- end of Building / Exterior  Photos --}}
-
-    {{-- Other Photos --}}
-    <div class="container mx-auto p-6 bg-white">
-        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Other Photos</div>
-
-        <div class="mx-36 my-20">
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">1 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="other1" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">2 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="other2" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-
-            <div class="mb-6 mx-10 flex items-center">
-                <div class="text-base font-semibold mb-2 mr-44">3 </div>
-
-                <!-- File input button -->
-                <input type="file" accept=".png, .jpg" id="other3" style="display: none;">
-                <button onclick="document.getElementById('imageInput').click();" class="bg-gray-500 hover:bg-transparent text-white hover:text-primary border hover:border-primary font-bold py-2 px-56 rounded-xl">
-                    <i class="fa-solid fa-image mr-2"></i>
-                    Select Image
-                </button>
-            </div>
-        </div>
-    </div>
-    {{-- end of Other Photos --}}
 
     {{-- upload Button mag save niya lang yung mga images--}}
     <div class="container mx-auto p-6 bg-white">
@@ -417,14 +209,6 @@
             </button>
         </a>
     </div>
-
-    {{-- Go to MAP Button --}}
-    {{-- <div class="container p-6 bg-white flex justify-end">
-        <button class="bg-gray-500 hover:bg-transparent border hover:border-primary text-white hover:text-primary font-bold py-2 px-4 rounded-md block">
-            Map
-            <i class="fa-solid fa-caret-right"></i>
-        </button>
-    </div> --}}
 
 
 {{-- Footer --}}

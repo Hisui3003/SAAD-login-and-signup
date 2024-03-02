@@ -145,28 +145,33 @@
 
 {{-- account wrapper --}}
 <div class="container p-6 bg-white">
+
+    <div class="flex justify-end py-5 mr-5 space-x-3">
+        <h3 class="">
+            Admin
+        </h3>
+        <i class="fa-solid fa-user-tie"></i>
+    </div>
+
+
     <div class="grid grid-cols-5 gap-4">
-        {{-- <div class="col-span-1 bg-gray-300 rounded-lg shadow-sm p-4 flex flex-col items-center justify-center">
 
-            <div class="flex items-center justify-center">
-                <i class="fa-solid fa-user-tie"></i>
-                <h3 class="py-5 pl-3 text-xl font-bold uppercase">Admin</h3>
-            </div>
-        </div> --}}
+        <div class="col-span-5 bg-gray-700 rounded-lg shadow-sm">
 
-        <div class="col-span-5 bg-gray-200 rounded-lg shadow-sm">
+            <div class="">
 
-            <div class="container pt-4 pb-4 mt-5 mx-5" >
-                <div class="flex items-center uppercase">
-                    <img src="https://www.svgrepo.com/show/41173/admin-with-cogwheels.svg" class="w-40 mr-10" alt="">
-                    <h3 class="text-xl font-semibold">
-                        Admin
-                    </h3>
                 </div>
+                    <div class="container flex items-center justify-center w-full my-2 space-x-14">
+                        <a href="adminpage" class="text-xl text-gray-200 hover:underline hover:text-white hover:shadow-lg transition">Verification</a>
+                        <a href="adminmanage" class="text-xl text-gray-200 hover:underline hover:text-white hover:shadow-lg transition">Manage</a>
+                    </div>
+                </div>
+
             </div>
 
-            {{-- landlord --}}
-            <div class="container mt-8 mx-auto border-t border-gray-400 ">
+
+            {{-- list nto --}}
+            <div class="container mt-3 mx-auto border rounded-sm py-5 border-gray-400 ">
                 <div class="px-4 pb-2 overflow-hidden">
                     <div class="mr-14 flex items-center">
                         <h3 class="text-xl mt-5 font-semibold">
@@ -205,7 +210,7 @@
             </div>
 
             {{-- properties --}}
-            <div class="container mt-8 mx-auto">
+            <div class="container mt-8 mx-auto border rounded-sm py-5 border-gray-400">
 
                 <div class="px-4 pb-2 overflow-hidden">
                     <div class="mr-14 flex items-center">

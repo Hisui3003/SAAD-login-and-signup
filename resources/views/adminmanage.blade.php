@@ -16,7 +16,7 @@
 
 
 </head>
-<body class="bg-white">
+<body>
     {{-- ito yung header ng page 1 --}}
     <header class="py-1 shadow-sm bg-white">
         <div class="container flex items-center justify-between">
@@ -60,7 +60,6 @@
             </div>
         </div>
     </header>
-
 
 {{-- navbar (1) --}}
    <div class="bg-gray-700">
@@ -144,28 +143,118 @@
    </div>
 {{-- end of navbar --}}
 
-{{-- account wrapper --}}
-   <div class="container p-6 bg-white">
-        <div class="container pt-4 pb-4 mx-5" >
-            <div class="flex items-center">
-                <img src="https://www.svgrepo.com/show/507442/user-circle.svg" class="w-40 mr-10" alt="">
-                <h3 class="text-xl font-semibold">
-                    John Doe
-                </h3>
-                <i class="fa-solid fa-minus mx-4"></i>
-                <h5 class="text-sm font-light text-gray-400 hover:text-primary cursor-pointer">
-                    Edit Profile
-                </h5>
+{{-- manage wrapper --}}
+<div class="container p-6 bg-white">
+
+    <div class="flex justify-end py-5 mr-5 space-x-3">
+        <h3 class="">
+            Admin
+        </h3>
+        <i class="fa-solid fa-user-tie"></i>
+    </div>
+
+    <div class="grid grid-cols-5 gap-4">
+
+        <div class="col-span-5 bg-gray-700 rounded-lg shadow-sm">
+
+            <div class="">
+
+                </div>
+                    <div class="container flex items-center justify-center w-full my-2 space-x-14">
+                        <a href="adminpage" class="text-xl text-gray-200 hover:underline hover:text-white hover:shadow-lg transition">Verification</a>
+                        <a href="adminmanage" class="text-xl text-gray-200 hover:underline hover:text-white hover:shadow-lg transition">Manage</a>
+                    </div>
+                </div>
+
             </div>
-        </div>
 
-        <div class="container gap-6 border-t pt-4 pb-16 items-start">
 
-            <div class=" bg-white px-4 pb-2 overflow-hidden">
-                <div class="mr-14">
-                    <h3 class="text-xl font-semibold">
-                        Rentals List
-                    </h3>
+            {{-- list nato ng mga kailangan makita ng admin --}}
+            <div class="container mt-3 mx-auto border rounded-sm py-5 border-gray-400 ">
+                <div class="px-4 pb-2 overflow-hidden">
+                    <div class="mr-14 flex items-center">
+                        <h3 class="text-xl mt-5 font-semibold">
+                            Landlords
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto py-5 my-3 bg-gray-300 rounded-lg">
+                    <table class="table-auto w-full border-transparent">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">ID</th>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">Name</th>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">Email</th>
+                                <th class="py-2 text-gray-800 border-b border-gray-400">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">1</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-x"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">2</td>
+                                <td class="px-4 py-2 border-b border-gray-400">Jane Smith</td>
+                                <td class="px-4 py-2 border-b border-gray-400">jane@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-x"></i></button></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="container mt-3 mx-auto border rounded-sm py-5 border-gray-400 ">
+                <div class="px-4 pb-2 overflow-hidden">
+                    <div class="mr-14 flex items-center">
+                        <h3 class="text-xl mt-5 font-semibold">
+                            Renters
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto py-5 my-3 bg-gray-300 rounded-lg">
+                    <table class="table-auto w-full border-transparent">
+                        <thead>
+                            <tr>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">ID</th>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">Name</th>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">Email</th>
+                                <th class="py-2 text-gray-800 border-b border-gray-400">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">1</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-x"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">2</td>
+                                <td class="px-4 py-2 border-b border-gray-400">Jane Smith</td>
+                                <td class="px-4 py-2 border-b border-gray-400">jane@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-x"></i></button></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            {{-- properties --}}
+            <div class="container mt-8 mx-auto border rounded-sm py-5 border-gray-400">
+
+                <div class="px-4 pb-2 overflow-hidden">
+                    <div class="mr-14 flex items-center">
+                        <h3 class="text-xl mt-5 font-semibold">
+                            Properties Verification
+                        </h3>
+                    </div>
                 </div>
 
                 <div class="overflow-x-auto py-5 my-3 bg-gray-300 rounded-lg">
@@ -173,23 +262,22 @@
                         <thead>
                             <tr>
                                 <th class="px-4 py-2 border-b border-r border-gray-400" style="width: 20%;">Photo</th>
+                                <th class="px-4 py-2 border-b border-r border-gray-400" style="width: 30%;">Landlord Name</th>
                                 <th class="px-4 py-2 border-b border-r border-gray-400" style="width: 35%;">Place Name</th>
-                                <th class="py-2 px-3 text-gray-800 border-b border-gray-400" style="width: 15%;">Update</th>
                                 <th class="py-2 px-3 text-gray-800 border-b border-gray-400" style="width: 15%;">Delete</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe</td>
                                 <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
-                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-pen-to-square"></i></button></td>
                                 <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-x"></i></button></td>
                             </tr>
                             <tr>
                                 <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/d81cc540022e2a.webp" alt="Property Photo 2"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">Jane Smith</td>
                                 <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">For Rent: 2 Storey House and Lot at M Residences, Taguig City</td>
-                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-pen-to-square"></i></button></td>
-
                                 <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-x"></i></button></td>
                             </tr>
                             <!-- Add more rows as needed -->
@@ -199,63 +287,14 @@
 
             </div>
 
-            <div class="container border-t border-b rounded-md bg-white h-24">
-                {{-- idk --}}
-            </div>
+            {{--  --}}
+            <div class="container mt-8 mx-auto">
 
-            <div class=" bg-white px-4 pb-2 overflow-hidden ">
-                <div class="mr-14 flex items-center">
-                    <h3 class="text-xl mt-10 font-semibold">
-                        Reviews and Feedback
-                    </h3>
-                </div>
             </div>
-
-            <div class="container border-t border-b rounded-md bg-white h-24">
-                {{-- idk --}}
-            </div>
-
-            <div class="bg-white px-4 pb-2 overflow-hidden">
-                <div class="mr-14 flex items-center">
-                    <h3 class="text-xl mt-10 font-semibold">
-                        Tenants Table
-                    </h3>
-                </div>
-            </div>
-
-            <div class="container border rounded-md bg-white py-4 mt-4 overflow-hidden">
-                <table class="w-full">
-                    <thead>
-                        <tr class="border-b">
-                            <th class="px-4 py-2 text-center">Name</th>
-                            <th class="px-4 py-2 text-center">Contact No.</th>
-                            <th class="px-4 py-2 text-center">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="px-4 py-2 text-center">John Doe</td>
-                            <td class="px-4 py-2 text-center">123-456-7890</td>
-                            <td class="px-4 py-2 text-center">Active</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2 text-center">Jack Smith</td>
-                            <td class="px-4 py-2 text-center">456-789-0123</td>
-                            <td class="px-4 py-2 text-center">Inactive</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="px-4 py-2 text-center">Jane Black</td>
-                            <td class="px-4 py-2 text-center">456-789-0123</td>
-                            <td class="px-4 py-2 text-center">Inactive</td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
-            </div>
-
         </div>
-   </div>
-{{-- account wrapper --}}
+    </div>
+</div>
+{{-- manage wrapper --}}
 
 {{-- Footer --}}
 <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
@@ -273,15 +312,7 @@
                 </a>
 
                 <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-square-instagram"></i>
                 </a>
             </div>
         </div>

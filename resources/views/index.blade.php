@@ -38,7 +38,7 @@
 
 
             {{-- yung icons --}}
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-5">
 
 
                 {{-- listing a property button --}}
@@ -50,13 +50,25 @@
                 </a>
 
 
+
                 {{-- account button --}}
                 <a href="user" class="text-center text-gray-700 hover:text-primary transition relative">
+
                     <div class="text-2xl">
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="text-sx leading-3">Account</div>
                 </a>
+
+                {{-- Log out button --}}
+                <a href="user" class="text-center text-gray-700 hover:text-primary transition relative">
+
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                    </div>
+                    <div class="text-sx leading-3">Log Out</div>
+                </a>
+
             </div>
         </div>
     </header>

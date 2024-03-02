@@ -157,7 +157,7 @@
 {{-- viewing --}}
     <div class="container grid grid-cols-6 gap-6 pt-4 pb-16 items-start">
         {{-- product --}}
-        <div class="col-span-4 bg-white px-4 py-6 border-l border-r rounded overflow-hidden">
+        <div class="col-span-4 bg-white px-4 py-6 rounded overflow-hidden">
 
             {{-- imagess --}}
 
@@ -410,7 +410,7 @@
         {{-- end of product --}}
 
         {{-- user info --}}
-        <div class="col-span-2 bg-white px-4 pb-2 shadow rounded-xl overflow-hidden">
+        <div class="col-span-2 bg-white px-4 pb-2 overflow-hidden">
 
             <div class="grid grid-cols-2 gap-6 pt-4 pb-2 items-start">
 
@@ -445,31 +445,15 @@
 
                 {{-- send inquiry section --}}
                 <div class="col-span-2 text-center px-2 pb-3 overflow-hidden">
-                    <h3 class="text-xl mb-3 uppercase align-middle font-medium">Send Inquiry</h3>
-
-                    <div class="mt-4 flex items-center">
-                        <input type="text" class="w-full border-gray-500 focus:border-primary focus:ring-0 px-3 py-2 text-gray-600 text-sm shadow-sm rounded" placeholder="Your Name">
-                    </div>
-
-                    <div class="mt-4 flex items-center">
-                        <input type="text" class="w-full border-gray-500 focus:border-primary focus:ring-0 px-3 py-2 text-gray-600 text-sm shadow-sm rounded" placeholder="Email">
-                    </div>
-
-                    <div class="mt-4 flex items-center">
-                        <input type="text" class="w-full border-gray-500 focus:border-primary focus:ring-0 px-3 py-2 text-gray-600 text-sm shadow-sm rounded" placeholder="Mobile Number">
-                    </div>
-
-                    <div class="mt-4">
-                        <textarea class="w-full h-20 border-gray-500 focus:border-primary focus:ring-0 px-3 py-2 text-gray-600 text-sm shadow-sm rounded resize-none" placeholder="Message"></textarea>
-                    </div>
-
-                    <div class="mt-4">
-                        <button class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">
-                            Send
-                        </button>
-                    </div>
-
+                    {{-- etong link pre kukuhain nalang to dun sa list a property, mag lagay nalang ako dun
+                        ng place kung saan nila pwede ilagay, tas dahil soc med to, pweding hindi sila mag
+                        lagay, and yung only way to contact nlang sila is yung number  --}}
+                    <a href="facebook link ni landlord" class=" bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center">
+                        <i class="fab fa-facebook-square mr-2"></i>
+                        Facebook
+                    </a>
                 </div>
+
                 {{-- end of send inquiry section --}}
 
             </div>
