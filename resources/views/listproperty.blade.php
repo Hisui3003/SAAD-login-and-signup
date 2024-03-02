@@ -379,12 +379,6 @@
 
     <div class="mx-36 my-20">
         <div class="flex items-center py-3">
-            <div class="text-base font-semibold mr-1 mb-2">Number: </div>
-            <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-24 w-96">
-        </div>
-        <div class="text-xs text-gray-600 ml-56 mb-10">Tip: Required</div>
-
-        <div class="flex items-center py-3">
             <div class="text-base font-semibold mb-2">Facebook Link: </div>
             <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-14 w-96">
         </div>
