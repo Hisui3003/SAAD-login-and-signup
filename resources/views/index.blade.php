@@ -143,8 +143,7 @@
                 <div class="flex items-center space-x-6 capitalize">
                     <a href="index" class="text-gray-200 hover:underline hover:text-white transition">Home</a>
                     <a href="rentals" class="text-gray-200 hover:underline hover:text-white transition">Rent</a>
-                    <a href="#" class="text-gray-200 hover:underline hover:text-white transition">About Us</a>
-                    <a href="#" class="text-gray-200 hover:underline hover:text-white transition">Contact Us</a>
+                    <a href="aboutus" class="text-gray-200 hover:underline hover:text-white transition">About Us</a>
                 </div>
                 {{-- login and register --}}
                 <a href="login" class="text-gray-200 hover:underline hover:text-white transition">Login/Register</a>

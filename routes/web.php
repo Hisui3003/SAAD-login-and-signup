@@ -66,3 +66,11 @@ Route::get('map', function () {
 Route::get('adminmanage', function () {
     return view('adminmanage');
 });
+
+Route::get('updateproperty', function () {
+    return view('updateproperty');
+});
+
+Route::get('aboutus', function () {
+    return view('aboutus');
+});

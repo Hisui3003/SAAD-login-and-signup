@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="">
+<body>
     {{-- ito yung header ng page 1 --}}
     <header class="py-1 shadow-sm bg-white">
         <div class="container flex items-center justify-between">
@@ -61,7 +61,6 @@
             </div>
         </div>
     </header>
-
 
 {{-- navbar (1) --}}
     <div class="bg-gray-700">
@@ -144,77 +143,151 @@
     </div>
 {{-- end of navbar --}}
 
-{{-- register --}}
-    <div class="container pt-16 pb-28 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.pexels.com/photos/4246202/pexels-photo-4246202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
-        <div class="max-w-lg mx-auto bg-white backdrop-blur-md shadow-md px-6 py-7 rounded-md overflow-hidden">
-            <h2 class="text-2xl uppercase font-medium mb-1">Signup</h2>
-            <p class="text-gray-600 mb-6 text-sm">
-                Register to
-                <span class="font-semibold text-lg text-center text-red-500 mb-2">FindFlat</span>
-            </p>
-            <form action="">
-                <div class="space-y-4">
-                    <div>
-                        <div class="flex">
-                            <label class="text-gray-500 mb-2 block">Full Name </label>
-                            <p class="text-primary">*</p>
-                        </div>
-                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Full Name">
-                    </div>
-                    <div>
-                        <div class="flex">
-                            <label class="text-gray-500 mb-2 block">Email Address</label>
-                            <p class="text-primary">*</p>
-                        </div>
-                        <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Email Address">
-                    </div>
-                    <div>
-                        <div class="flex">
-                            <label class="text-gray-500 mb-2 block">Password</label>
-                            <p class="text-primary">*</p>
-                        </div>
-                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Password">
-                    </div>
-                    <div>
-                        <div class="flex">
-                            <label class="text-gray-500 mb-2 block">Confirm Password</label>
-                            <p class="text-primary">*</p>
-                        </div>
-                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="Confirm Password">
-                    </div>
+{{-- Listing Area --}}
 
-                    {{-- <div class="flex items-center justify-between mt-6">
-                        <div class="flex items-center">
-                            <input type="checkbox" id="agreement" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
-                            <label for="agreement" class="text-gray-500 ml-3 cursor-pointer">Remember me</label>
-                        </div>
-                    </div> --}}
-                    <div class="mt-4">
-                        <button type="submit"
-                        class="block w-full py-2 text-center text-white bg-red-600 border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">
-                            Sign up
-                        </button>
-                    </div>
+{{-- basic info --}}
+    <div class="container mx-auto p-6 bg-white">
+        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Basic Information</div>
+
+        <div class="mx-36 my-20">
+            <div class="mb-6 mx-10 flex items-center">
+                <div class="text-base font-semibold mb-2">Property Type:</div>
+                    <select class="ml-7 rounded-md border border-gray-300 p-2 w-96">
+                        <option>--Choose One--</option>
+                        <option>Apartment</option>
+                        <option>Condominium</option>
+                        <option>House</option>
+                    </select>
+            </div>
+
+            <div class="mb-6 mx-10">
+                <div class="text-base font-semibold mb-2">Rental Terms:</div>
+                <div class="ml-36">
+                    <label class="flex items-center mb-2">
+                        <input type="checkbox" class="mr-2">
+                        <span class="font-semibold text-sm">For Long Term</span>
+                        <span class="text-xs text-gray-600 ml-1">(minimum of 6 months)</span>
+                    </label>
+
+                    <label class="flex items-center">
+                        <input type="checkbox" class="mr-2">
+                        <span class="font-semibold text-sm">For Short Term</span>
+                        <span class="text-xs text-gray-600 ml-1">(available for daily, weekly or monthly rent)</span>
+                    </label>
+                    <div class="text-xs text-gray-600 mt-1">Tip: You can pick both if applies.</div>
                 </div>
-            </form>
-
-            {{-- login w/ --}}
-            <div class="mt-6 flex justify-center relative">
-                <div class="text-gray-600 uppercase px-3 bg-white z-10 relative"> Or Register with</div>
-                <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
             </div>
-            <div class="flex mt-4 gap-4">
-                <a href="#" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-roboto fonr-medium text-sm hover:bg-blue-700">Facebook</a>
-                <a href="#" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-roboto fonr-medium text-sm hover:bg-yellow-500">Google</a>
-            </div>
-            {{-- end of login w/ --}}
 
-            <p class="mt-4 text-gray-500 text-center">
-                Already got an Account? <a href="login" class="text-primary text-semibold">Login Now</a>
-            </p>
+            <div class="mx-10">
+
+                <div class="flex items-center">
+                    <div class="text-base font-semibold mb-2">Minimum Stay:</div>
+                    <select id="stayDuration" class="ml-7 rounded-md border border-gray-300 p-2 w-96">
+                        <option>--Choose One--</option>
+                        <optgroup label="Long Term">
+                            <option value="1 Year">1 Year</option>
+                            <option value="6 months">6 months</option>
+                        </optgroup>
+                        <optgroup label="Short Term">
+                            <option value="3 Months">3 Months</option>
+                            <option value="2 Months">2 Months</option>
+                            <option value="1 Month">1 Month</option>
+                            <option value="3 Weeks">3 Weeks</option>
+                            <option value="2 Weeks">2 Weeks</option>
+                            <option value="1 Week">1 Week</option>
+                            <option value="6 Nights">6 Nights</option>
+                            <option value="5 Nights">5 Nights</option>
+                            <option value="4 Nights">4 Nights</option>
+                            <option value="3 Nights">3 Nights</option>
+                            <option value="2 Nights">2 Nights</option>
+                            <option value="1 Night">1 Night</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="text-xs text-gray-600 ml-36 mt-1">Tip: Indicate how long is your minimum required stay for this property.</div>
+            </div>
         </div>
-   </div>
-{{-- end of register --}}
+    </div>
+{{-- end of Basic Info --}}
+
+{{-- Rental Rates --}}
+    <div class="container mx-auto p-6 bg-white">
+        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Rental Rates</div>
+
+        <div class="mx-36 my-20">
+
+            <div class="mx-10 mt-5 p-10 border border-black rounded-md">
+
+                <div class="text-xs text-gray-600 ml-56 mt-1">Monthly Rate</div>
+
+                <div class="flex items-center">
+                    <div class="text-base font-semibold mb-2">Long Term Rental Rates:</div>
+                    <i class="fa-solid fa-peso-sign ml-4"></i>
+                    <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-6 w-96">
+                </div>
+            </div>
+
+            <div class="mx-10 mt-5 p-10 border border-black rounded-md">
+
+                <div class="text-xs text-gray-600 ml-56 mt-1">Daily Rate</div>
+
+                <div class="flex items-center">
+                    <div class="text-base font-semibold mb-2">Short Term Rental Rates:</div>
+                    <i class="fa-solid fa-peso-sign ml-4"></i>
+                    <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-6 w-96">
+                </div>
+
+
+                <div class="text-xs text-gray-600 ml-56 mt-5">Weekly Rate</div>
+                <div class="mx-48 flex items-center">
+                    <i class="fa-solid fa-peso-sign ml-3"></i>
+                    <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-6 w-96">
+                </div>
+
+                <div class="text-xs text-gray-600 ml-56 mt-5">Monthly Rate</div>
+                <div class="mx-48 flex items-center">
+                    <i class="fa-solid fa-peso-sign ml-3"></i>
+                    <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-6 w-96">
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+{{-- end of Rental Rates --}}
+
+{{-- Title and desc --}}
+    <div class="container mx-auto p-6 bg-white">
+        <div class="text-lg font-bold mb-4 my-10 mx-20 border-b">Title & Description</div>
+
+        <div class="mx-36 my-20">
+            <div class="flex items-center py-3">
+                <div class="text-base font-semibold mr-1 mb-2">Title: </div>
+                <input type="text" placeholder="" class="rounded-md border border-gray-300 ml-12 w-full">
+            </div>
+
+            <div class="text-xs text-gray-600 ml-56 mt-5">Tip:  Tell us about the important details about your unit.</div>
+            <div class="flex items-center py-3">
+                <div class="text-base font-semibold mb-2">Description: </div>
+                <textarea placeholder="" class="rounded-md border border-gray-300 ml-10 w-full h-32"></textarea>
+            </div>
+        </div>
+    </div>
+{{-- end of Title and desc --}}
+
+{{-- Go Button --}}
+<div class="container mx-auto p-3 bg-white">
+    <a href="">
+        <button class="bg-primary hover:bg-transparent border hover:border-primary text-white hover:text-primary font-bold py-2 px-4 uppercase rounded-md my-5 mx-auto block">
+            Update
+        </button>
+    </a>
+</div>
+
+
+{{-- End of Listing Area --}}
 
 {{-- Footer --}}
 <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
@@ -255,4 +328,3 @@
 
 </body>
 </html>
-

@@ -64,8 +64,8 @@
 
 
 {{-- navbar (1) --}}
-   <div class="bg-gray-700">
-       <div class="container flex">
+    <div class="bg-gray-700">
+        <div class="container flex">
 
             {{-- categories --}}
             <div class="mr-5">
@@ -133,16 +133,15 @@
                 <div class="flex items-center space-x-6 capitalize">
                     <a href="index" class="text-gray-200 hover:underline hover:text-white transition">Home</a>
                     <a href="rentals" class="text-gray-200 hover:underline hover:text-white transition">Rent</a>
-                    <a href="#" class="text-gray-200 hover:underline hover:text-white transition">About Us</a>
-                    <a href="#" class="text-gray-200 hover:underline hover:text-white transition">Contact Us</a>
+                    <a href="aboutus" class="text-gray-200 hover:underline hover:text-white transition">About Us</a>
                 </div>
                 {{-- login and register --}}
                 <a href="login" class="text-gray-200 hover:underline hover:text-white transition">Login/Register</a>
                 {{-- end of login and register --}}
             </div>
             {{-- end of navbar links --}}
-       </div>
-   </div>
+        </div>
+    </div>
 {{-- end of navbar --}}
 
 {{-- login --}}
@@ -192,23 +191,14 @@
             {{-- end of login w/ --}}
 
             <div class="mt-4 text-gray-500 text-center">
-                <p>Don't have an Account? <a href="#" class="text-primary text-semibold" onclick="toggleRegisterOptions()">Register Now</a></p>
+                <input type="checkbox" id="toggleRegisterOptions" class="hidden">
+                <label for="toggleRegisterOptions">Don't have an Account? <a href="#" class="text-primary text-semibold">Register Now</a></label>
                 <div id="registerOptions" class="hidden mt-4 justify-center">
-                    {{-- <button href="renter_register" class="underline border border-primary bg-transparent hover:bg-orange-400 text-primary hover:text-white font-bold py-2 px-4 mr-2 rounded w-32 h-10">Renter</button>
-                    <button href="landlord_register" class="underline border border-primary bg-transparent hover:bg-primary text-primary hover:text-white font-bold py-2 px-4 rounded w-32 h-10">Landlord</button> --}}
-                    <div class="flex mt-4 gap-4">
-                        <a href="renter_register" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-roboto fonr-medium text-sm hover:bg-blue-700">Renter</a>
-                        <a href="landlord_register" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-roboto fonr-medium text-sm hover:bg-yellow-500">Landlord</a>
-                    </div>
+                    <a href="renter_register" class="w-1/2 py-2 text-center text-white bg-blue-800 rounded uppercase font-roboto fonr-medium text-sm hover:bg-blue-700 transition duration-300 ease-in-out">Renter</a>
+                    <a href="landlord_register" class="w-1/2 py-2 text-center text-white bg-yellow-600 rounded uppercase font-roboto fonr-medium text-sm hover:bg-yellow-500 transition duration-300 ease-in-out">Landlord</a>
                 </div>
             </div>
 
-            <script>
-                function toggleRegisterOptions() {
-                    var options = document.getElementById("registerOptions");
-                    options.classList.toggle("hidden");
-                }
-            </script>
         </div>
    </div>
 {{-- end of login --}}
