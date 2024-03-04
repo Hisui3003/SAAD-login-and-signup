@@ -74,3 +74,11 @@ Route::get('updateproperty', function () {
 Route::get('aboutus', function () {
     return view('aboutus');
 });
+
+Route::get('tenant_user', function () {
+    return view('tenant_user');
+});
+
+Route::get('contract', function () {
+    return view('contract');
+});
