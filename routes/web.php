@@ -82,3 +82,7 @@ Route::get('tenant_user', function () {
 Route::get('contract', function () {
     return view('contract');
 });
+
+Route::get('paymentform', function () {
+    return view('paymentform');
+});
