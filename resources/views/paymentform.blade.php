@@ -235,6 +235,28 @@
             });
         </script>
 
+        {{-- proof of payment --}}
+        <div class="mx-10 mt-5 p-10 border border-black rounded-md">
+
+            <div class="text-xs text-gray-600 ml-56 mt-1"></div>
+
+            <div class="flex items-center">
+                <div class="text-base font-semibold mb-2">Proof of Payment:</div>
+                <i class="fa-solid fa-receipt ml-12"></i>
+                <input type="file" id="file-input" class="hidden">
+                <label for="file-input" class="cursor-pointer ml-5 bg-gray-400 hover:bg-primary text-white py-2 px-10 rounded-xl">Choose Image</label>
+                <span id="image-name" class="ml-3"></span>
+            </div>
+
+            <script>
+                document.getElementById('file-input').addEventListener('change', function() {
+                    var fileName = this.files[0].name;
+                    document.getElementById('image-name').textContent = fileName;
+                });
+            </script>
+
+        </div>
+
         </div>
     </div>
 </div>
