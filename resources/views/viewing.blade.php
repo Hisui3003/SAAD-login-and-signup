@@ -453,6 +453,60 @@
                     </a>
                 </div>
 
+                {{-- <div class="col-span-2 text-center px-2 pb-3 overflow-hidden">
+                    <form action="{{ route('inquire.post') }}" method="post">
+                        @csrf
+                        <input type="hidden" name="properties_id" value="{{ $property->id }}">
+                        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Inquire
+                        </button>
+                    </form>
+                </div> --}}
+
+                <div class="col-span-2 text-center px-2 pb-3 overflow-hidden">
+                    <form action="{{ route('inquire.post') }}" method="post">
+                        @csrf
+                        <input type="hidden" name="properties_id" value="{{ $property->id }}">
+                        <a id="download-docx" href="#" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center cursor-pointer">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Inquire
+                        </a>
+
+                        <button id="upload-pdf" class="hidden border-b bg-white hover:bg-primary text-black hover:text-white font-bold py-2 px-4 w-full rounded mt-10">Upload PDF</button>
+                        <input type="file" id="pdf-input" class="hidden" accept="application/pdf">
+                    </form>
+                </div>
+
+                <script>
+                    document.getElementById('download-docx').addEventListener('click', function(event) {
+                        event.preventDefault(); // Prevent default action of the link
+
+                        // Create a dummy link for downloading the DOCX file
+                        var link = document.createElement('a');
+                        link.href = 'path/to/your/docx/file.docx'; // Replace 'path/to/your/docx/file.docx' with the actual path to your DOCX file
+                        link.download = 'file.docx';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+
+                        // Show the upload PDF button
+                        document.getElementById('upload-pdf').classList.remove('hidden');
+                    });
+
+                    // Add event listener to the upload PDF button
+                    document.getElementById('upload-pdf').addEventListener('click', function() {
+                        document.getElementById('pdf-input').click();
+                    });
+
+                    // Optional: Add event listener to the PDF input to handle file selection
+                    document.getElementById('pdf-input').addEventListener('change', function() {
+                        var fileName = this.files[0].name;
+                        alert('Selected PDF file: ' + fileName);
+                        // Here you can perform additional actions with the selected PDF file
+                    });
+                </script>
+
                 {{-- end of send inquiry section --}}
 
             </div>
