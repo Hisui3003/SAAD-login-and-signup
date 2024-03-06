@@ -17,147 +17,159 @@
 
 </head>
 <body>
-    {{-- ito yung header ng page 1 --}}
-    <header class="py-1 shadow-sm bg-white">
-        <div class="container flex items-center justify-between">
-            {{-- logo --}}
-            <a href="#">
-                <img src="https://www.svgrepo.com/show/272028/houses-home.svg" alt="homelogo" class="w-16">
-                <h1 class="text-gray-700 hover:text-red-500 transision">FindFlat</h1>
+   {{-- ito yung header ng page 1 --}}
+   <header class="py-1 shadow-sm bg-white">
+    <div class="container flex items-center justify-between">
+        {{-- logo --}}
+        <a href="#">
+            <img src="https://www.svgrepo.com/show/272028/houses-home.svg" alt="homelogo" class="w-16">
+            <h1 class="text-gray-700 hover:text-red-500 transision">FindFlat</h1>
+        </a>
+
+
+        {{-- search area --}}
+        <div class="w-full max-w-xl relative flex">
+            <span class="absolute left-4 top-3 text-lg text-gray-400">
+                <i class="fas fa-search"></i>
+            </span>
+            <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-1-md focus:outline-none" placeholder="Search">
+            <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+        </div>
+
+
+        {{-- yung icons --}}
+        <div class="flex items-center space-x-5">
+
+
+            {{-- listing a property button --}}
+            <a href="listproperty" class="text-center text-gray-700 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="fas fa-house-flag"></i>
+                </div>
+                <div class="text-sx leading-3">Property</div>
             </a>
 
 
-            {{-- search area --}}
-            <div class="w-full max-w-xl relative flex">
-                <span class="absolute left-4 top-3 text-lg text-gray-400">
-                    <i class="fas fa-search"></i>
-                </span>
-                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-1-md focus:outline-none" placeholder="Search">
-                <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
-            </div>
 
+            {{-- account button --}}
+            <a href="user" class="text-center text-gray-700 hover:text-primary transition relative">
 
-            {{-- yung icons --}}
-            <div class="flex items-center space-x-4">
-
-
-                {{-- listing a property button --}}
-                <a href="listproperty" class="text-center text-gray-700 hover:text-primary transition relative">
-                    <div class="text-2xl">
-                        <i class="fas fa-house-flag"></i>
-                    </div>
-                    <div class="text-sx leading-3">Property</div>
-                </a>
-
-
-                {{-- account button --}}
-                <a href="user" class="text-center text-gray-700 hover:text-primary transition relative">
-                    <div class="text-2xl">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="text-sx leading-3">Account</div>
-                </a>
-            </div>
-        </div>
-    </header>
-
-{{-- navbar (1) --}}
-    <div class="bg-gray-700">
-        <div class="container flex">
-
-            {{-- categories --}}
-            <div class="mr-5">
-                <div class="px-8 py-4 hover:bg-primary flex items-center cursor-pointer relative group">
-                    <span class="text-white">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                    <span class="capitalize ml-2 text-white">All Categories</span>
-
-                    <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-solid hidden group-hover:block transition">
-
-                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                            <i class="fa-solid fa-map-location-dot w-5 h-5 object-contain"></i>
-                            <span class="ml-6 text-gray-600 text-sm">Location</span>
-                        </a>
-
-
-                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                            <i class="fa-solid fa-list w-5 h-5 object-contain"></i>
-                            <span class="ml-6 text-gray-600 text-sm">Property Type</span>
-                        </a>
-
-
-                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                            <i class="fa-solid fa-peso-sign w-5 h-5 object-contain"></i>
-                            <span class="ml-6 text-gray-600 text-sm">Price</span>
-                        </a>
-
-
-                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                            <i class="fa-solid fa-bed w-5 h-5 object-contain"></i>
-                            <span class="ml-6 text-gray-600 text-sm">Bedrooms</span>
-                        </a>
-
-
-                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                            <i class="fa-solid fa-calendar-days w-5 h-5 object-contain"></i>
-                            <span class="ml-6 text-gray-600 text-sm">Short Term</span>
-                        </a>
-
-
-                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                            <i class="fa-solid fa-bath w-5 h-5 object-contain"></i>
-                            <span class="ml-6 text-gray-600 text-sm">Bathrooms</span>
-                        </a>
-
-
-                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                            <i class="fa-solid fa-ruler-combined w-5 h-5 object-contain"></i>
-                            <span class="ml-6 text-gray-600 text-sm">Floor Area</span>
-                        </a>
-
-
-                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                            <i class="fa-solid fa-person-shelter w-5 h-5 object-contain"></i>
-                            <span class="ml-6 text-gray-600 text-sm">Amenities</span>
-                        </a>
-                    </div>
+                <div class="text-2xl">
+                    <i class="fas fa-user"></i>
                 </div>
-            </div>
-            {{-- end of categories --}}
+                <div class="text-sx leading-3">Account</div>
+            </a>
 
-            {{-- navbar links --}}
-            <div class="flex items-center justify-between flex-grow pl-12">
-                <div class="flex items-center space-x-6 capitalize">
-                    <a href="index" class="text-gray-200 hover:underline hover:text-white transition">Home</a>
-                    <a href="rentals" class="text-gray-200 hover:underline hover:text-white transition">Rent</a>
-                    <a href="aboutus" class="text-gray-200 hover:underline hover:text-white transition">About Us</a>
+            {{-- Log out button --}}
+            <a href="user" class="text-center text-gray-700 hover:text-primary transition relative">
+
+                <div class="text-2xl">
+                    <i class="fa-solid fa-right-from-bracket"></i>
                 </div>
-                {{-- login and register --}}
-                <a href="login" class="text-gray-200 hover:underline hover:text-white transition">Login/Register</a>
-                {{-- end of login and register --}}
-            </div>
-            {{-- end of navbar links --}}
+                <div class="text-sx leading-3">Log Out</div>
+            </a>
+
         </div>
     </div>
+</header>
+
+{{-- navbar (1) --}}
+<div class="bg-gray-700">
+   <div class="container flex">
+
+        {{-- categories --}}
+        <div class="mr-5">
+            <div class="px-8 py-4 hover:bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">All Categories</span>
+
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-solid hidden group-hover:block transition">
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <i class="fa-solid fa-map-location-dot w-5 h-5 object-contain"></i>
+                        <span class="ml-6 text-gray-600 text-sm">Location</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <i class="fa-solid fa-list w-5 h-5 object-contain"></i>
+                        <span class="ml-6 text-gray-600 text-sm">Property Type</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <i class="fa-solid fa-peso-sign w-5 h-5 object-contain"></i>
+                        <span class="ml-6 text-gray-600 text-sm">Price</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <i class="fa-solid fa-bed w-5 h-5 object-contain"></i>
+                        <span class="ml-6 text-gray-600 text-sm">Bedrooms</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <i class="fa-solid fa-calendar-days w-5 h-5 object-contain"></i>
+                        <span class="ml-6 text-gray-600 text-sm">Short Term</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <i class="fa-solid fa-bath w-5 h-5 object-contain"></i>
+                        <span class="ml-6 text-gray-600 text-sm">Bathrooms</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <i class="fa-solid fa-ruler-combined w-5 h-5 object-contain"></i>
+                        <span class="ml-6 text-gray-600 text-sm">Floor Area</span>
+                    </a>
+
+
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <i class="fa-solid fa-person-shelter w-5 h-5 object-contain"></i>
+                        <span class="ml-6 text-gray-600 text-sm">Amenities</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{-- end of categories --}}
+
+        {{-- navbar links --}}
+        <div class="flex items-center justify-between flex-grow pl-12">
+            <div class="flex items-center space-x-6 capitalize">
+                <a href="index" class="text-gray-200 hover:underline hover:text-white transition">Home</a>
+                <a href="rentals" class="text-gray-200 hover:underline hover:text-white transition">Rent</a>
+                <a href="aboutus" class="text-gray-200 hover:underline hover:text-white transition">About Us</a>
+            </div>
+            {{-- login and register --}}
+            <a href="login" class="text-gray-200 hover:underline hover:text-white transition">Login/Register</a>
+            {{-- end of login and register --}}
+        </div>
+        {{-- end of navbar links --}}
+   </div>
+</div>
 {{-- end of navbar --}}
 
 {{-- account wrapper --}}
 <div class="container p-6 bg-white">
 
-    <div class="flex justify-end py-5 mr-5 space-x-3">
+    {{-- <div class="flex justify-end py-5 mr-5 space-x-3">
         <h3 class="">
             Admin
         </h3>
         <i class="fa-solid fa-user-tie"></i>
-    </div>
+    </div> --}}
 
 
     <div class="grid grid-cols-5 gap-4">
 
         <div class="col-span-5 bg-gray-700 rounded-lg shadow-sm">
 
-            <div class="">
+            {{-- <div class="">
 
                 </div>
                     <div class="container flex items-center justify-center w-full my-2 space-x-14">
@@ -166,7 +178,7 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
 
 
             {{-- list nto --}}
@@ -179,14 +191,14 @@
                     </div>
                 </div>
 
-                <div class="overflow-x-auto py-5 my-3 bg-gray-300 rounded-lg">
+                <div class="overflow-x-auto my-3 bg-gray-300 rounded-lg max-h-[400px] relative">
                     <table class="table-auto w-full border-transparent">
-                        <thead>
+                        <thead class="sticky top-0 bg-white">
                             <tr>
-                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">ID</th>
-                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">Name</th>
-                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400">Email</th>
-                                <th class="py-2 text-gray-800 border-b border-gray-400">Verification</th>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400 bg-gray-300">ID</th>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400 bg-gray-300">Name</th>
+                                <th class="px-4 py-2 text-gray-800 border-b border-r border-gray-400 bg-gray-300">Email</th>
+                                <th class="py-2 text-gray-800 border-b border-gray-400 bg-gray-300">Verification</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -198,14 +210,70 @@
                             </tr>
                             <tr>
                                 <td class="px-4 py-2 border-b border-gray-400">2</td>
-                                <td class="px-4 py-2 border-b border-gray-400">Jane Smith</td>
-                                <td class="px-4 py-2 border-b border-gray-400">jane@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
                                 <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
                             </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">3</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">4</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">5</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">6</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">7</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">8</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">9</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">10</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400">11</td>
+                                <td class="px-4 py-2 border-b border-gray-400">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400">john@example.com</td>
+                                <td class="px-4 py-2 border-b border-gray-400 text-center"><button class="bg-transparent rounded-md px-5 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+
                             <!-- Add more rows as needed -->
                         </tbody>
                     </table>
                 </div>
+
             </div>
 
             {{-- properties --}}
@@ -219,27 +287,87 @@
                     </div>
                 </div>
 
-                <div class="overflow-x-auto py-5 my-3 bg-gray-300 rounded-lg">
+                <div class="overflow-x-auto max-h-[700px] my-3 bg-gray-300 rounded-lg relative">
                     <table class="table-auto w-full border-transparent">
-                        <thead>
+                        <thead class="sticky top-0 bg-white">
                             <tr>
-                                <th class="px-4 py-2 border-b border-r border-gray-400" style="width: 20%;">Photo</th>
-                                <th class="px-4 py-2 border-b border-r border-gray-400" style="width: 30%;">Landlord Name</th>
-                                <th class="px-4 py-2 border-b border-r border-gray-400" style="width: 35%;">Place Name</th>
-                                <th class="py-2 px-3 text-gray-800 border-b border-gray-400" style="width: 15%;">Verification</th>
+                                <th class="px-4 py-2 border-b border-r border-gray-400 bg-gray-300" style="width: 35%;">Place Name</th>
+                                <th class="px-4 py-2 border-b border-r border-gray-400 bg-gray-300" style="width: 35%;">Owner</th>
+                                <th class="px-4 py-2 border-b border-r border-gray-400 bg-gray-300" style="width: 35%;">Place Name</th>
+                                <th class="py-2 px-3 text-gray-800 border-b border-gray-400 bg-gray-300" style="width: 15%;">Verification</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
-                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 1</td>
                                 <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
                                 <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
                             </tr>
                             <tr>
-                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/d81cc540022e2a.webp" alt="Property Photo 2"></td>
-                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">Jane Smith</td>
-                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">For Rent: 2 Storey House and Lot at M Residences, Taguig City</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 2</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 3</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 4</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 5</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 6</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 1</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 2</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 3</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 4</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 5</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
+                                <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;"><img src="https://static-ph.lamudi.com/static/media/bm9uZS9ub25l/2x2x6x1200x900/9c8e653dc6d133.webp" alt="Property Photo 1"></td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 25%;">John Doe 6</td>
+                                <td class="px-4 py-2 border-b border-gray-400" style="width: 30%;">4BR Fully Furnished House for lease in McKinley Hills Subdivision, Taguig</td>
                                 <td class="px-5 py-2 border-b border-gray-400 text-center" style="width: 15%;"><button class="bg-transparent rounded-md px-5 py-1 hover:bg-primary hover:border-b hover:border-t hover:border-primary hover:text-white font-bold"><i class="fa-solid fa-check"></i></button></td>
                             </tr>
                             <!-- Add more rows as needed -->
