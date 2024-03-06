@@ -37,20 +37,19 @@
                 <hr class="my-2 text-gray-400">
             </div>
 
-            <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 text-white cursor-pointer hover:bg-red-500">
-                <i class="fa-solid fa-house"></i>
-                <span class="text-[15px] font-semibold ml-8 text-white">Home</span>
-            </div>
+            <a href="index" target="_blank" rel="noopener noreferrer">
+                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 text-white cursor-pointer hover:bg-red-500">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="text-[15px] font-semibold ml-8 text-white">Home</span>
+                </div>
+            </a>
 
-            <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 text-white cursor-pointer hover:bg-red-500">
-                <i class="fa-solid fa-house-laptop"></i>
-                <span class="text-[15px] font-semibold ml-8 text-white">Rent</span>
-            </div>
-
-            <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 text-white cursor-pointer hover:bg-red-500">
-                <i class="fa-solid fa-house-flag"></i>
-                <span class="text-[15px] font-semibold ml-8 text-white">Property</span>
-            </div>
+            <a href="rentals" target="_blank" rel="noopener noreferrer">
+                <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 text-white cursor-pointer hover:bg-red-500">
+                    <i class="fa-solid fa-house-laptop"></i>
+                    <span class="text-[15px] font-semibold ml-8 text-white">Rent</span>
+                </div>
+            </a>
 
             <hr class="my-2 text-gray-400">
 
