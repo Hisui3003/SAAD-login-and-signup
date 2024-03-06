@@ -86,3 +86,16 @@ Route::get('contract', function () {
 Route::get('paymentform', function () {
     return view('paymentform');
 });
+
+Route::get('pageadmin', function () {
+    return view('pageadmin');
+});
+
+
+// FOR TESTING
+// FOR TESTING
+// FOR TESTING
+
+// FOR TESTING
+// FOR TESTING
+// FOR TESTING
